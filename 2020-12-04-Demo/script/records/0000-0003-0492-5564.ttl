@@ -1,0 +1,713 @@
+@prefix orcid: <http://uqam.ca/vivo-dataconnect/orcid#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://uqam.ca/vivo-dataconnect/dataset/0000-0003-0492-5564>
+  a owl:Ontology ;
+  owl:imports <http://uqam.ca/vivo-dataconnect/orcid> ;
+.
+<http://uqam.ca/vivo-dataconnect/orcid#0000-0003-0492-5564>
+  a orcid:OrcidMember ;
+  orcid:withSummary [ <http://uqam.ca/vivo-dataconnect/orcid#activities-summary>
+          [ <http://uqam.ca/vivo-dataconnect/orcid#distinctions>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0003-0492-5564/distinctions" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#educations>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#affiliation-group>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#external-ids>
+                                        []  ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.4647178E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#summaries>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#education-summary>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#created-date>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                      "1.4647178E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#department-name>
+                                                            "Psychology" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#display-index>
+                                                            "0" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#end-date>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#day>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                                "01" ] ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#month>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                                "06" ] ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#year>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                                "2013" ]
+                                                            ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                      "1.4647178E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#organization>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#address>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#city>
+                                                                                "QC" ;
+                                                                        <http://uqam.ca/vivo-dataconnect/orcid#country>
+                                                                                "CA" ;
+                                                                        <http://uqam.ca/vivo-dataconnect/orcid#region>
+                                                                                "QC"
+                                                                      ] ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#disambiguated-organization>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#disambiguated-organization-identifier>
+                                                                                "http://dx.doi.org/10.13039/100009452" ;
+                                                                        <http://uqam.ca/vivo-dataconnect/orcid#disambiguation-source>
+                                                                                "FUNDREF"
+                                                                      ] ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#name>
+                                                                      "Université du Québec à Montréal"
+                                                            ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                            "/0000-0003-0492-5564/education/1874700" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#put-code>
+                                                            "1874700"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#role-title>
+                                                            "B. Sc. in Psychology" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#source>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#source-name>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                                "Vincent LeBlanc" ] ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#source-orcid>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                                                                                "orcid.org" ;
+                                                                        <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                                                "0000-0003-0492-5564" ;
+                                                                        <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                                                                                "https://orcid.org/0000-0003-0492-5564"
+                                                                      ]
+                                                            ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#start-date>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#day>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                                "01" ] ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#month>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                                "09" ] ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#year>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                                "2010" ]
+                                                            ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#visibility>
+                                                            "public"
+                                                  ]
+                                        ]
+                              ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#affiliation-group>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#external-ids>
+                                        []  ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.4647178E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#summaries>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#education-summary>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#created-date>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                      "1.4647178E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#department-name>
+                                                            "School of Psychology" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#display-index>
+                                                            "0" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                      "1.4647178E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#organization>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#address>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#city>
+                                                                                "Ottawa" ;
+                                                                        <http://uqam.ca/vivo-dataconnect/orcid#country>
+                                                                                "CA" ;
+                                                                        <http://uqam.ca/vivo-dataconnect/orcid#region>
+                                                                                "ON"
+                                                                      ] ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#disambiguated-organization>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#disambiguated-organization-identifier>
+                                                                                "6363" ;
+                                                                        <http://uqam.ca/vivo-dataconnect/orcid#disambiguation-source>
+                                                                                "RINGGOLD"
+                                                                      ] ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#name>
+                                                                      "University of Ottawa"
+                                                            ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                            "/0000-0003-0492-5564/education/1874702" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#put-code>
+                                                            "1874702"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#role-title>
+                                                            "Ph. D. in Psychology" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#source>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#source-name>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                                "Vincent LeBlanc" ] ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#source-orcid>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                                                                                "orcid.org" ;
+                                                                        <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                                                "0000-0003-0492-5564" ;
+                                                                        <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                                                                                "https://orcid.org/0000-0003-0492-5564"
+                                                                      ]
+                                                            ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#start-date>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#day>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                                "01" ] ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#month>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                                "09" ] ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#year>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                                "2014" ]
+                                                            ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#visibility>
+                                                            "public"
+                                                  ]
+                                        ]
+                              ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                        "1.4647178E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0003-0492-5564/educations"
+                    ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#employments>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0003-0492-5564/employments" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#fundings>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0003-0492-5564/fundings" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#invited-positions>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0003-0492-5564/invited-positions" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                              "1.50280418E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#memberships>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0003-0492-5564/memberships" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#path>
+                    "/0000-0003-0492-5564/activities" ;
+            <http://uqam.ca/vivo-dataconnect/orcid#peer-reviews>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0003-0492-5564/peer-reviews" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#qualifications>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0003-0492-5564/qualifications" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#research-resources>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0003-0492-5564/research-resources" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#services>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0003-0492-5564/services" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#works>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#group>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#external-ids>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#external-id>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#external-id-normalized>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#transient>
+                                                                      true ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                      "10.1016/b978-0-12-804315-8.00016-1"
+                                                            ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#external-id-relationship>
+                                                            "self" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#external-id-type>
+                                                            "doi" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#external-id-value>
+                                                            "10.1016/b978-0-12-804315-8.00016-1"
+                                                  ]
+                                        ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.50280418E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#work-summary>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#created-date>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                            "1.50280418E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#display-index>
+                                                  "0" ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#external-ids>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#external-id>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#external-id-normalized>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#transient>
+                                                                                true ;
+                                                                        <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                                "10.1016/b978-0-12-804315-8.00016-1"
+                                                                      ] ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#external-id-relationship>
+                                                                      "self" ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#external-id-type>
+                                                                      "doi" ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#external-id-value>
+                                                                      "10.1016/b978-0-12-804315-8.00016-1"
+                                                            ]
+                                                  ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#journal-title>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                            "Systems Factorial Technology" ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                            "1.50280418E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                  "/0000-0003-0492-5564/work/35995850" ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#publication-date>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#year>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                      "2017" ]
+                                                  ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#put-code>
+                                                  "35995850"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#source>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#assertion-origin-name>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                      "Vincent LeBlanc" ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#assertion-origin-orcid>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                                                                      "orcid.org" ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                                      "0000-0003-0492-5564" ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                                                                      "https://orcid.org/0000-0003-0492-5564"
+                                                            ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#source-client-id>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                                                                      "orcid.org" ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                                      "0000-0002-3054-1567" ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                                                                      "https://orcid.org/client/0000-0002-3054-1567"
+                                                            ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#source-name>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                      "Crossref Metadata Search" ]
+                                                  ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#title>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#title>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                      "Applying Systems Factorial Technology to Accumulators with Varying Thresholds" ]
+                                                  ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#type>
+                                                  "other" ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#visibility>
+                                                  "public"
+                                        ]
+                              ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#group>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#external-ids>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#external-id>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#external-id-normalized>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#transient>
+                                                                      true ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                      "10.20982/tqmp.13.1.p046"
+                                                            ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#external-id-relationship>
+                                                            "self" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#external-id-type>
+                                                            "doi" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#external-id-value>
+                                                            "10.20982/tqmp.13.1.p046"
+                                                  ]
+                                        ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.50280418E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#work-summary>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#created-date>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                            "1.50280418E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#display-index>
+                                                  "0" ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#external-ids>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#external-id>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#external-id-normalized>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#transient>
+                                                                                true ;
+                                                                        <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                                "10.20982/tqmp.13.1.p046"
+                                                                      ] ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#external-id-relationship>
+                                                                      "self" ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#external-id-type>
+                                                                      "doi" ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#external-id-value>
+                                                                      "10.20982/tqmp.13.1.p046"
+                                                            ]
+                                                  ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#journal-title>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                            "The Quantitative Methods for Psychology" ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                            "1.50280418E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                  "/0000-0003-0492-5564/work/35995895" ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#publication-date>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#day>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                      "01" ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#month>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                      "01" ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#year>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                      "2017" ]
+                                                  ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#put-code>
+                                                  "35995895"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#source>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#assertion-origin-name>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                      "Vincent LeBlanc" ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#assertion-origin-orcid>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                                                                      "orcid.org" ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                                      "0000-0003-0492-5564" ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                                                                      "https://orcid.org/0000-0003-0492-5564"
+                                                            ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#source-client-id>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                                                                      "orcid.org" ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                                      "0000-0002-3054-1567" ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                                                                      "https://orcid.org/client/0000-0002-3054-1567"
+                                                            ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#source-name>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                      "Crossref Metadata Search" ]
+                                                  ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#title>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#title>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                      "interpretation of the point-biserial correlation coefficient in the context of a school examination" ]
+                                                  ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#type>
+                                                  "journal-article" ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#visibility>
+                                                  "public"
+                                        ]
+                              ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                        "1.50280418E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0003-0492-5564/works"
+                    ]
+          ] ;
+  <http://uqam.ca/vivo-dataconnect/orcid#history>
+          [ <http://uqam.ca/vivo-dataconnect/orcid#claimed>
+                    true ;
+            <http://uqam.ca/vivo-dataconnect/orcid#creation-method>
+                    "DIRECT" ;
+            <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                              "1.5161013E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#submission-date>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                              "1.45597714E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#verified-email>
+                    true ;
+            <http://uqam.ca/vivo-dataconnect/orcid#verified-primary-email>
+                    true
+          ] ;
+  <http://uqam.ca/vivo-dataconnect/orcid#orcid-identifier>
+          [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                    "orcid.org" ;
+            <http://uqam.ca/vivo-dataconnect/orcid#path>
+                    "0000-0003-0492-5564" ;
+            <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                    "https://orcid.org/0000-0003-0492-5564"
+          ] ;
+  <http://uqam.ca/vivo-dataconnect/orcid#path>
+          "/0000-0003-0492-5564" ;
+  <http://uqam.ca/vivo-dataconnect/orcid#person>
+          [ <http://uqam.ca/vivo-dataconnect/orcid#addresses>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#address>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#country>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "CA" ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#created-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.46471793E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#display-index>
+                                        "0"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.46471793E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                        "/0000-0003-0492-5564/address/477905" ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#put-code>
+                                        "477905"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#source>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#source-name>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                            "Vincent LeBlanc" ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#source-orcid>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                                                            "orcid.org" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                            "0000-0003-0492-5564" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                                                            "https://orcid.org/0000-0003-0492-5564"
+                                                  ]
+                                        ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#visibility>
+                                        "public"
+                              ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                        "1.46471793E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0003-0492-5564/address"
+                    ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#emails>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#email>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#created-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.49011549E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#email>
+                                        "Vincent.LeBlanc@uottawa.ca" ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.49011549E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#primary>
+                                        true ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#source>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#source-name>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                            "Vincent LeBlanc" ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#source-orcid>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                                                            "orcid.org" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                            "0000-0003-0492-5564" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                                                            "https://orcid.org/0000-0003-0492-5564"
+                                                  ]
+                                        ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#verified>
+                                        true ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#visibility>
+                                        "public"
+                              ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                        "1.49011549E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0003-0492-5564/email"
+                    ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#external-identifiers>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0003-0492-5564/external-identifiers" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#keywords>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#keyword>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#content>
+                                        "Systems Factorial Technology" ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#created-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.50280431E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#display-index>
+                                        "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.50280431E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                        "/0000-0003-0492-5564/keywords/763943" ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#put-code>
+                                        "763943"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#source>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#source-name>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                            "Vincent LeBlanc" ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#source-orcid>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                                                            "orcid.org" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                            "0000-0003-0492-5564" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                                                            "https://orcid.org/0000-0003-0492-5564"
+                                                  ]
+                                        ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#visibility>
+                                        "public"
+                              ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#keyword>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#content>
+                                        "Statistics" ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#created-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.50280431E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#display-index>
+                                        "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.50280431E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                        "/0000-0003-0492-5564/keywords/763942" ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#put-code>
+                                        "763942"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#source>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#source-name>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                            "Vincent LeBlanc" ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#source-orcid>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                                                            "orcid.org" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                            "0000-0003-0492-5564" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                                                            "https://orcid.org/0000-0003-0492-5564"
+                                                  ]
+                                        ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#visibility>
+                                        "public"
+                              ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#keyword>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#content>
+                                        "Cognitive Science" ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#created-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.50280431E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#display-index>
+                                        "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.50280431E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                        "/0000-0003-0492-5564/keywords/763941" ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#put-code>
+                                        "763941"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#source>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#source-name>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                            "Vincent LeBlanc" ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#source-orcid>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                                                            "orcid.org" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                            "0000-0003-0492-5564" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                                                            "https://orcid.org/0000-0003-0492-5564"
+                                                  ]
+                                        ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#visibility>
+                                        "public"
+                              ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#keyword>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#content>
+                                        "Psychology" ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#created-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.50280431E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#display-index>
+                                        "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.50280431E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                        "/0000-0003-0492-5564/keywords/763940" ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#put-code>
+                                        "763940"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#source>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#source-name>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                            "Vincent LeBlanc" ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#source-orcid>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                                                            "orcid.org" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                            "0000-0003-0492-5564" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                                                            "https://orcid.org/0000-0003-0492-5564"
+                                                  ]
+                                        ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#visibility>
+                                        "public"
+                              ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                        "1.50280431E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0003-0492-5564/keywords"
+                    ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                              "1.50280431E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#name>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#created-date>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                        "1.4607631E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#family-name>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                        "LeBlanc" ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#given-names>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                        "Vincent" ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                        "1.4607631E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "0000-0003-0492-5564" ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#visibility>
+                              "public"
+                    ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#other-names>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0003-0492-5564/other-names" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#path>
+                    "/0000-0003-0492-5564/person" ;
+            <http://uqam.ca/vivo-dataconnect/orcid#researcher-urls>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                        "1.46471793E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0003-0492-5564/researcher-urls" ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#researcher-url>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#created-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.46471793E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#display-index>
+                                        "0"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.46471793E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                        "/0000-0003-0492-5564/researcher-urls/747229" ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#put-code>
+                                        "747229"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#source>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#source-name>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                            "Vincent LeBlanc" ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#source-orcid>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                                                            "orcid.org" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                            "0000-0003-0492-5564" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                                                            "https://orcid.org/0000-0003-0492-5564"
+                                                  ]
+                                        ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#url>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "https://www.researchgate.net/profile/Vincent_Leblanc2" ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#url-name>
+                                        "ResearchGate" ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#visibility>
+                                        "public"
+                              ]
+                    ]
+          ] ;
+  <http://uqam.ca/vivo-dataconnect/orcid#preferences>
+          [ <http://uqam.ca/vivo-dataconnect/orcid#locale>
+                    "en" ]
+] .

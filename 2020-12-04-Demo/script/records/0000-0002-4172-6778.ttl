@@ -1,0 +1,314 @@
+@prefix orcid: <http://uqam.ca/vivo-dataconnect/orcid#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://uqam.ca/vivo-dataconnect/dataset/0000-0002-4172-6778>
+  a owl:Ontology ;
+  owl:imports <http://uqam.ca/vivo-dataconnect/orcid> ;
+.
+<http://uqam.ca/vivo-dataconnect/orcid#0000-0002-4172-6778>
+  a orcid:OrcidMember ;
+  orcid:withSummary [ <http://uqam.ca/vivo-dataconnect/orcid#activities-summary>
+          [ <http://uqam.ca/vivo-dataconnect/orcid#distinctions>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0002-4172-6778/distinctions" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#educations>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0002-4172-6778/educations" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#employments>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#affiliation-group>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#external-ids>
+                                        []  ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.601045E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#summaries>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#employment-summary>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#created-date>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                      "1.5276186E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#department-name>
+                                                            "Political Science" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#display-index>
+                                                            "0" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                      "1.601045E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#organization>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#address>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#city>
+                                                                                "Liège" ;
+                                                                        <http://uqam.ca/vivo-dataconnect/orcid#country>
+                                                                                "BE"
+                                                                      ] ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#disambiguated-organization>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#disambiguated-organization-identifier>
+                                                                                "grid.4861.b" ;
+                                                                        <http://uqam.ca/vivo-dataconnect/orcid#disambiguation-source>
+                                                                                "GRID"
+                                                                      ] ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#name>
+                                                                      "University of Liège"
+                                                            ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                            "/0000-0002-4172-6778/employment/5905517" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#put-code>
+                                                            "5905517"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#role-title>
+                                                            "Full professor" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#source>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#source-name>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                                "Sebastian Santander" ] ;
+                                                              <http://uqam.ca/vivo-dataconnect/orcid#source-orcid>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                                                                                "orcid.org" ;
+                                                                        <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                                                "0000-0002-4172-6778" ;
+                                                                        <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                                                                                "https://orcid.org/0000-0002-4172-6778"
+                                                                      ]
+                                                            ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#start-date>
+                                                            [ <http://uqam.ca/vivo-dataconnect/orcid#year>
+                                                                      [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                                                "2015" ]
+                                                            ] ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#visibility>
+                                                            "public"
+                                                  ]
+                                        ]
+                              ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                        "1.601045E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0002-4172-6778/employments"
+                    ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#fundings>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0002-4172-6778/fundings" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#invited-positions>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0002-4172-6778/invited-positions" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                              "1.601045E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#memberships>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0002-4172-6778/memberships" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#path>
+                    "/0000-0002-4172-6778/activities" ;
+            <http://uqam.ca/vivo-dataconnect/orcid#peer-reviews>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0002-4172-6778/peer-reviews" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#qualifications>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0002-4172-6778/qualifications" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#research-resources>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0002-4172-6778/research-resources" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#services>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0002-4172-6778/services" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#works>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0002-4172-6778/works" ]
+          ] ;
+  <http://uqam.ca/vivo-dataconnect/orcid#history>
+          [ <http://uqam.ca/vivo-dataconnect/orcid#claimed>
+                    true ;
+            <http://uqam.ca/vivo-dataconnect/orcid#creation-method>
+                    "DIRECT" ;
+            <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                              "1.60104658E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#submission-date>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                              "1.52761742E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#verified-email>
+                    true ;
+            <http://uqam.ca/vivo-dataconnect/orcid#verified-primary-email>
+                    true
+          ] ;
+  <http://uqam.ca/vivo-dataconnect/orcid#orcid-identifier>
+          [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                    "orcid.org" ;
+            <http://uqam.ca/vivo-dataconnect/orcid#path>
+                    "0000-0002-4172-6778" ;
+            <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                    "https://orcid.org/0000-0002-4172-6778"
+          ] ;
+  <http://uqam.ca/vivo-dataconnect/orcid#path>
+          "/0000-0002-4172-6778" ;
+  <http://uqam.ca/vivo-dataconnect/orcid#person>
+          [ <http://uqam.ca/vivo-dataconnect/orcid#addresses>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0002-4172-6778/address" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#biography>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#content>
+                              "Sebastian Santander is Full Professor, Head of the Political Science Department and in charge of the Center for International Relations Studies (CEFIR) of the Faculty of Law, Political Science and Criminology at the University of Liège (ULg). He is also Associate member of the Centre d’études sur l’intégration et la mondialisation from the Université du Québec à Montréal (UQAM) and of the Institute of European Studies of the Université libre de Bruxelles (ULB). \nHe received a PhD from the ULB where he worked nine years as Lecturer and did a one-year post-doc at the Faculty of Art and Social Science of the University of Maastricht. He has been visiting scholar at the College of Europe (European Interdisciplinary Studies Department, Natolin Campus) and in many other universities (Brasilia, Brussels, Hangzhou, Le Havre, Leuven, Lubumbashi, Lima, Maastricht, Porto Alegre, Cluj-Napoca, Rouen, etc.). \nHis research work is in the field of international political economy and focuses on the distribution of power in the global governance. The topic is treated through the study of regional organizations in a comparative and geopolitical perspective, the external action of the both the European Union and Latin America, the foreign policy of traditional powers (United States) and the so-called (re-) emerging powers (China, Brazil).\n\nHis articles have appeared in: European Foreign Affairs Review; Foreign Affairs Latinoamerica, Journal of European Integration; Relations internationales; Etudes internationales, Politique européenne; Relazioni Internazionali; Cuadernos sobre relaciones internacionales, regionalismo y desarrollo. Recent books include: (ed.) Concurrences régionales dans un monde multipolaire émergent, (Brussels, Peter Lang, 2016, 358 p.); (ed.) L’Afrique, terrain de jeu des émergents (Paris, Karthala, 2014, 319 p.); (ed.) Puissances émergentes: un défi pour l’Europe? (Paris, Ellipses, 2012, 384 p.); (ed.) Relations internationales et régionalisme. Entre dynamiques internes et projections mondiales (Liège, Presses universitaires de Liège, 2012, 381 p.).\nHe is also the Director of the Journal of Cross-Regional Dialogues (JCRD) edited by the ULiège University Press: https://popups.uliege.be/2593-9483/index.php?lang=en" ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#created-date>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                        "1.60104566E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                        "1.60104566E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0002-4172-6778/biography" ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#visibility>
+                              "public"
+                    ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#emails>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0002-4172-6778/email" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#external-identifiers>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0002-4172-6778/external-identifiers" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#keywords>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0002-4172-6778/keywords" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                              "1.60104658E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#name>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#created-date>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                        "1.52761742E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#family-name>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                        "Santander" ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#given-names>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                        "Sebastian" ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                        "1.52761742E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "0000-0002-4172-6778" ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#visibility>
+                              "public"
+                    ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#other-names>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0002-4172-6778/other-names" ] ;
+            <http://uqam.ca/vivo-dataconnect/orcid#path>
+                    "/0000-0002-4172-6778/person" ;
+            <http://uqam.ca/vivo-dataconnect/orcid#researcher-urls>
+                    [ <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                        "1.60104658E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#path>
+                              "/0000-0002-4172-6778/researcher-urls" ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#researcher-url>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#created-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.60104658E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#display-index>
+                                        "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.60104658E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                        "/0000-0002-4172-6778/researcher-urls/2234759" ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#put-code>
+                                        "2234759"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#source>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#source-name>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                            "Sebastian Santander" ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#source-orcid>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                                                            "orcid.org" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                            "0000-0002-4172-6778" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                                                            "https://orcid.org/0000-0002-4172-6778"
+                                                  ]
+                                        ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#url>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "https://popups.uliege.be/2593-9483/index.php?page=comite" ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#url-name>
+                                        "Director of the Journal of Cross-Regional Dialogues" ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#visibility>
+                                        "public"
+                              ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#researcher-url>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#created-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.60104487E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#display-index>
+                                        "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.60104658E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                        "/0000-0002-4172-6778/researcher-urls/2234721" ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#put-code>
+                                        "2234721"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#source>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#source-name>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                            "Sebastian Santander" ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#source-orcid>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                                                            "orcid.org" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                            "0000-0002-4172-6778" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                                                            "https://orcid.org/0000-0002-4172-6778"
+                                                  ]
+                                        ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#url>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "https://orbi.uliege.be/orbi-report?query=%28%28uid%3Au204866%29%29&model=a&format=apa&data=metric&sort_by0=1&order0=DESC&sort_by1=3&order1=ASC&sort_by2=2&order2=ASC&output=pdf&language=en&title=Publications+et+communications+de+Sébastian+Santander+%5Bu204866%5D" ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#url-name>
+                                        "PublicationsORBI" ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#visibility>
+                                        "public"
+                              ] ;
+                      <http://uqam.ca/vivo-dataconnect/orcid#researcher-url>
+                              [ <http://uqam.ca/vivo-dataconnect/orcid#created-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.60104474E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#display-index>
+                                        "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#last-modified-date>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "1.60104658E12"^^<http://www.w3.org/2001/XMLSchema#float> ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                        "/0000-0002-4172-6778/researcher-urls/2234717" ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#put-code>
+                                        "2234717"^^<http://www.w3.org/2001/XMLSchema#int> ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#source>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#source-name>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                            "Sebastian Santander" ] ;
+                                          <http://uqam.ca/vivo-dataconnect/orcid#source-orcid>
+                                                  [ <http://uqam.ca/vivo-dataconnect/orcid#host>
+                                                            "orcid.org" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#path>
+                                                            "0000-0002-4172-6778" ;
+                                                    <http://uqam.ca/vivo-dataconnect/orcid#uri>
+                                                            "https://orcid.org/0000-0002-4172-6778"
+                                                  ]
+                                        ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#url>
+                                        [ <http://uqam.ca/vivo-dataconnect/orcid#value>
+                                                  "http://local.droit.ulg.ac.be/jcms/service/index.php?serv=73" ] ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#url-name>
+                                        "Director of the Center for International Relations Studies" ;
+                                <http://uqam.ca/vivo-dataconnect/orcid#visibility>
+                                        "public"
+                              ]
+                    ]
+          ] ;
+  <http://uqam.ca/vivo-dataconnect/orcid#preferences>
+          [ <http://uqam.ca/vivo-dataconnect/orcid#locale>
+                    "en" ]
+] .
