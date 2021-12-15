@@ -1,0 +1,21 @@
+# baseURI: http://purl.org/vivo.uqam.ca/data
+
+@prefix : <http://purl.org/vivo.uqam.ca/data/> .
+@prefix data: <http://purl.org/vivo.uqam.ca/data/> .
+@prefix event: <http://purl.org/vivo.uqam.ca/data/event#> .
+@prefix organization: <http://purl.org/vivo.uqam.ca/data/organization#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix people: <http://purl.org/vivo.uqam.ca/data/people#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix research: <http://purl.org/vivo.uqam.ca/data/research#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/vivo.uqam.ca/data#>
+  rdf:type owl:Ontology ;
+  owl:imports <http://purl.org/vivo.uqam.ca/data#people> ;
+  owl:imports <http://purl.org/vivo.uqam.ca/data#research> ;
+  owl:imports event: ;
+  owl:imports organization: ;
+  owl:versionInfo "(c) 2022 Université du Québec à Montréal ; Auteur Michel Héon PhD" ;
+.

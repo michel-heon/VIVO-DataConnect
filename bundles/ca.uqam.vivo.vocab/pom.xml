@@ -1,0 +1,374 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>ca.uqam.vivo.vocab</groupId>
+    <artifactId>ca.uqam.vivo.vocab</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <properties>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <fork>true</fork>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>uqam-data</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>jena.schemagen</mainClass>
+                            <commandlineArgs>
+                                -i  ${basedir}/src/main/resources/UQAM_DATA.ttl \
+                                -e TURLTE \
+                                --package ca.uqam.vocab.uqam \
+                                -o  ${basedir}/src/main/java \
+                                -n UQAM_DATA
+                            </commandlineArgs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>uqam-organization</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>jena.schemagen</mainClass>
+                            <commandlineArgs>
+                                -i  ${basedir}/src/main/resources/UQAM_Organization.ttl \
+                                -e TURLTE \
+                                --package ca.uqam.vocab.uqam \
+                                -o  ${basedir}/src/main/java \
+                                -n UQAM_ORGANIZATION
+                            </commandlineArgs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>uqam-people</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>jena.schemagen</mainClass>
+                            <commandlineArgs>
+                                -i  ${basedir}/src/main/resources/UQAM_People.ttl \
+                                -e TURLTE \
+                                --package ca.uqam.vocab.uqam \
+                                -o  ${basedir}/src/main/java \
+                                -n UQAM_PEOPLE
+                            </commandlineArgs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>uqam-research</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>jena.schemagen</mainClass>
+                            <commandlineArgs>
+                                -i  ${basedir}/src/main/resources/UQAM_Research.ttl \
+                                -e TURLTE \
+                                --package ca.uqam.vocab.uqam \
+                                -o  ${basedir}/src/main/java \
+                                -n UQAM_RESEARCH
+                            </commandlineArgs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>uqam-event</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>jena.schemagen</mainClass>
+                            <commandlineArgs>
+                                -i  ${basedir}/src/main/resources/UQAM_Event.ttl \
+                                -e TURLTE \
+                                --package ca.uqam.vocab.uqam \
+                                -o  ${basedir}/src/main/java \
+                                -n UQAM_EVENT
+                            </commandlineArgs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>vitro-code</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>jena.schemagen</mainClass>
+                            <commandlineArgs>
+                                -i  ${basedir}/src/main/resources/vitro-0.7.nt \
+                                -a http://vitro.mannlib.cornell.edu/ns/vitro/0.7# \
+                                -e NT \
+                                --ontology \
+                                --package ca.uqam.vocab.vitro \
+                                -o  ${basedir}/src/main/java \
+                                -n VITRO
+                            </commandlineArgs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>vivo-code</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>jena.schemagen</mainClass>
+                            <commandlineArgs>
+                                -i ${basedir}/src/main/resources/vivo.nt \
+                                -a http://vivoweb.org/ontology/core# \
+                                -e NT \
+                                --ontology \
+                                --package ca.uqam.vocab.vivo \
+                                -o  ${basedir}/src/main/java \
+                                -n VIVO
+                            </commandlineArgs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>obo-code</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>jena.schemagen</mainClass>
+                            <commandlineArgs>
+                                -i ${basedir}/src/main/resources/vivo.nt \
+                                -a http://purl.obolibrary.org/obo/ \
+                                -e NT \
+                                --package ca.uqam.vocab.vivo \
+                                -o ${basedir}/src/main/java \
+                                -n OBO
+                            </commandlineArgs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>skos-code</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>jena.schemagen</mainClass>
+                            <commandlineArgs>
+                                -i ${basedir}/src/main/resources/vivo.nt \
+                                -a http://www.w3.org/2004/02/skos/core# \
+                                -e NT \
+                                --package ca.uqam.vocab.vivo \
+                                -o ${basedir}/src/main/java \
+                                -n SKOS
+                            </commandlineArgs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>skos2-code</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>jena.schemagen</mainClass>
+                            <commandlineArgs>
+                                -i ${basedir}/src/main/resources/vivo.nt \
+                                -a http://www.w3.org/2008/05/skos# \
+                                -e NT \
+                                --package ca.uqam.vocab.vivo \
+                                -o ${basedir}/src/main/java \
+                                -n SKOS2
+                            </commandlineArgs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>term-code</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>jena.schemagen</mainClass>
+                            <commandlineArgs>
+                                -i ${basedir}/src/main/resources/vivo.nt \
+                                -a http://purl.org/dc/terms/ \
+                                -e NT \
+                                --package ca.uqam.vocab.vivo \
+                                -o ${basedir}/src/main/java \
+                                -n TERM
+                            </commandlineArgs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>bibo-code</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>jena.schemagen</mainClass>
+                            <commandlineArgs>
+                                -i ${basedir}/src/main/resources/vivo.nt \
+                                -a http://purl.org/ontology/bibo/ \
+                                -e NT \
+                                --package ca.uqam.vocab.vivo \
+                                -o ${basedir}/src/main/java \
+                                -n BIBO
+                            </commandlineArgs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>ns-code</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>jena.schemagen</mainClass>
+                            <commandlineArgs>
+                                -i ${basedir}/src/main/resources/vivo.nt \
+                                -a http://www.w3.org/2003/06/sw-vocab-status/ns# \
+                                -e NT \
+                                --package ca.uqam.vocab.vivo \
+                                -o ${basedir}/src/main/java \
+                                -n NS
+                            </commandlineArgs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>geopolitical-code</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>jena.schemagen</mainClass>
+                            <commandlineArgs>
+                                -i ${basedir}/src/main/resources/vivo.nt \
+                                -a http://aims.fao.org/aos/geopolitical.owl# \
+                                -e NT \
+                                --package ca.uqam.vocab.vivo \
+                                -o ${basedir}/src/main/java \
+                                -n GEO
+                            </commandlineArgs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>vcard-code</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>jena.schemagen</mainClass>
+                            <commandlineArgs>
+                                -i ${basedir}/src/main/resources/vivo.nt \
+                                -a http://www.w3.org/2006/vcard/ns# \
+                                -e NT \
+                                --package ca.uqam.vocab.vivo \
+                                -o ${basedir}/src/main/java \
+                                -n VCARD
+                            </commandlineArgs>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${basedir}/src/main/java</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <pluginManagement>
+            <plugins>
+                <!--This plugin's configuration is used to store Eclipse 
+                    m2e settings only. It has no influence on the Maven build itself. -->
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.codehaus.mojo
+                                        </groupId>
+                                        <artifactId>
+                                            build-helper-maven-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [3.2.0,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>add-source</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore></ignore>
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.jena</groupId>
+            <artifactId>apache-jena-libs</artifactId>
+            <type>pom</type>
+            <version>3.17.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.jena</groupId>
+            <artifactId>apache-jena</artifactId>
+            <version>3.17.0</version>
+            <type>pom</type>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sourceforge.owlapi</groupId>
+            <artifactId>owlapi-distribution</artifactId>
+            <version>5.1.17</version>
+        </dependency>
+    </dependencies>
+</project>
+        
