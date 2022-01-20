@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>ca.uqam.vivo.vocab</groupId>
@@ -9,6 +10,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <skipGen>true</skipGen>
     </properties>
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
@@ -27,19 +29,42 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>uqam-data</id>
+                        <id>uqam-people</id>
                         <phase>generate-sources</phase>
                         <goals>
                             <goal>java</goal>
                         </goals>
                         <configuration>
+                            <skip>${skipGen}</skip>
                             <mainClass>jena.schemagen</mainClass>
                             <commandlineArgs>
-                                -i  ${basedir}/src/main/resources/UQAM_DATA.ttl \
+                                -i ${basedir}/src/main/resources/UQAM_DATA.ttl \
                                 -e TURLTE \
+                                -a http://purl.org/vivo.uqam.ca/data/organization# \
+                                --ontology \
                                 --package ca.uqam.vocab.uqam \
-                                -o  ${basedir}/src/main/java \
-                                -n UQAM_DATA
+                                -o ${basedir}/src/main/java \
+                                -n UQAM_ORGANIZATION
+                            </commandlineArgs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>uqam-event</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <skip>${skipGen}</skip>
+                            <mainClass>jena.schemagen</mainClass>
+                            <commandlineArgs>
+                                -i ${basedir}/src/main/resources/UQAM_DATA.ttl \
+                                -e TURLTE \
+                                -a http://purl.org/vivo.uqam.ca/data/event# \
+                                --ontology \
+                                --package ca.uqam.vocab.uqam \
+                                -o ${basedir}/src/main/java \
+                                -n UQAM_EVENT
                             </commandlineArgs>
                         </configuration>
                     </execution>
@@ -51,29 +76,15 @@
                         </goals>
                         <configuration>
                             <mainClass>jena.schemagen</mainClass>
+                            <skip>${skipGen}</skip>
                             <commandlineArgs>
-                                -i  ${basedir}/src/main/resources/UQAM_Organization.ttl \
+                                -i ${basedir}/src/main/resources/UQAM_DATA.ttl \
                                 -e TURLTE \
+                                -a http://purl.org/vivo.uqam.ca/data/organization# \
+                                --ontology \
                                 --package ca.uqam.vocab.uqam \
-                                -o  ${basedir}/src/main/java \
+                                -o ${basedir}/src/main/java \
                                 -n UQAM_ORGANIZATION
-                            </commandlineArgs>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>uqam-people</id>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>java</goal>
-                        </goals>
-                        <configuration>
-                            <mainClass>jena.schemagen</mainClass>
-                            <commandlineArgs>
-                                -i  ${basedir}/src/main/resources/UQAM_People.ttl \
-                                -e TURLTE \
-                                --package ca.uqam.vocab.uqam \
-                                -o  ${basedir}/src/main/java \
-                                -n UQAM_PEOPLE
                             </commandlineArgs>
                         </configuration>
                     </execution>
@@ -84,30 +95,16 @@
                             <goal>java</goal>
                         </goals>
                         <configuration>
+                            <skip>${skipGen}</skip>
                             <mainClass>jena.schemagen</mainClass>
                             <commandlineArgs>
-                                -i  ${basedir}/src/main/resources/UQAM_Research.ttl \
+                                -i ${basedir}/src/main/resources/UQAM_DATA.ttl \
                                 -e TURLTE \
+                                -a http://purl.org/vivo.uqam.ca/data/research# \
+                                --ontology \
                                 --package ca.uqam.vocab.uqam \
-                                -o  ${basedir}/src/main/java \
+                                -o ${basedir}/src/main/java \
                                 -n UQAM_RESEARCH
-                            </commandlineArgs>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>uqam-event</id>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>java</goal>
-                        </goals>
-                        <configuration>
-                            <mainClass>jena.schemagen</mainClass>
-                            <commandlineArgs>
-                                -i  ${basedir}/src/main/resources/UQAM_Event.ttl \
-                                -e TURLTE \
-                                --package ca.uqam.vocab.uqam \
-                                -o  ${basedir}/src/main/java \
-                                -n UQAM_EVENT
                             </commandlineArgs>
                         </configuration>
                     </execution>
@@ -118,14 +115,16 @@
                             <goal>java</goal>
                         </goals>
                         <configuration>
+                            <skip>${skipGen}</skip>
                             <mainClass>jena.schemagen</mainClass>
                             <commandlineArgs>
-                                -i  ${basedir}/src/main/resources/vitro-0.7.nt \
+                                -i ${basedir}/src/main/resources/vitro-0.7.nt \
                                 -a http://vitro.mannlib.cornell.edu/ns/vitro/0.7# \
-                                -e NT \
                                 --ontology \
+                                -e NT \
                                 --package ca.uqam.vocab.vitro \
-                                -o  ${basedir}/src/main/java \
+                                -o ${basedir}/src/main/java \
+                                --ontology \
                                 -n VITRO
                             </commandlineArgs>
                         </configuration>
@@ -137,14 +136,16 @@
                             <goal>java</goal>
                         </goals>
                         <configuration>
+                            <skip>${skipGen}</skip>
                             <mainClass>jena.schemagen</mainClass>
                             <commandlineArgs>
                                 -i ${basedir}/src/main/resources/vivo.nt \
                                 -a http://vivoweb.org/ontology/core# \
                                 -e NT \
                                 --ontology \
-                                --package ca.uqam.vocab.vivo \
-                                -o  ${basedir}/src/main/java \
+                                --package
+                                ca.uqam.vocab.vivo \
+                                -o ${basedir}/src/main/java \
                                 -n VIVO
                             </commandlineArgs>
                         </configuration>
@@ -156,12 +157,15 @@
                             <goal>java</goal>
                         </goals>
                         <configuration>
+                            <skip>${skipGen}</skip>
                             <mainClass>jena.schemagen</mainClass>
                             <commandlineArgs>
                                 -i ${basedir}/src/main/resources/vivo.nt \
                                 -a http://purl.obolibrary.org/obo/ \
                                 -e NT \
-                                --package ca.uqam.vocab.vivo \
+                                --ontology \
+                                --package
+                                ca.uqam.vocab.vivo \
                                 -o ${basedir}/src/main/java \
                                 -n OBO
                             </commandlineArgs>
@@ -174,11 +178,13 @@
                             <goal>java</goal>
                         </goals>
                         <configuration>
+                            <skip>${skipGen}</skip>
                             <mainClass>jena.schemagen</mainClass>
                             <commandlineArgs>
                                 -i ${basedir}/src/main/resources/vivo.nt \
                                 -a http://www.w3.org/2004/02/skos/core# \
                                 -e NT \
+                                --ontology \
                                 --package ca.uqam.vocab.vivo \
                                 -o ${basedir}/src/main/java \
                                 -n SKOS
@@ -192,12 +198,15 @@
                             <goal>java</goal>
                         </goals>
                         <configuration>
+                            <skip>${skipGen}</skip>
                             <mainClass>jena.schemagen</mainClass>
                             <commandlineArgs>
                                 -i ${basedir}/src/main/resources/vivo.nt \
                                 -a http://www.w3.org/2008/05/skos# \
+                                --ontology \
                                 -e NT \
-                                --package ca.uqam.vocab.vivo \
+                                --package
+                                ca.uqam.vocab.vivo \
                                 -o ${basedir}/src/main/java \
                                 -n SKOS2
                             </commandlineArgs>
@@ -210,12 +219,15 @@
                             <goal>java</goal>
                         </goals>
                         <configuration>
+                            <skip>${skipGen}</skip>
                             <mainClass>jena.schemagen</mainClass>
                             <commandlineArgs>
                                 -i ${basedir}/src/main/resources/vivo.nt \
                                 -a http://purl.org/dc/terms/ \
                                 -e NT \
-                                --package ca.uqam.vocab.vivo \
+                                --ontology \
+                                --package
+                                ca.uqam.vocab.vivo \
                                 -o ${basedir}/src/main/java \
                                 -n TERM
                             </commandlineArgs>
@@ -228,12 +240,15 @@
                             <goal>java</goal>
                         </goals>
                         <configuration>
+                            <skip>${skipGen}</skip>
                             <mainClass>jena.schemagen</mainClass>
                             <commandlineArgs>
                                 -i ${basedir}/src/main/resources/vivo.nt \
                                 -a http://purl.org/ontology/bibo/ \
                                 -e NT \
-                                --package ca.uqam.vocab.vivo \
+                                --ontology \
+                                --package
+                                ca.uqam.vocab.vivo \
                                 -o ${basedir}/src/main/java \
                                 -n BIBO
                             </commandlineArgs>
@@ -246,11 +261,13 @@
                             <goal>java</goal>
                         </goals>
                         <configuration>
+                            <skip>${skipGen}</skip>
                             <mainClass>jena.schemagen</mainClass>
                             <commandlineArgs>
                                 -i ${basedir}/src/main/resources/vivo.nt \
                                 -a http://www.w3.org/2003/06/sw-vocab-status/ns# \
                                 -e NT \
+                                --ontology \
                                 --package ca.uqam.vocab.vivo \
                                 -o ${basedir}/src/main/java \
                                 -n NS
@@ -264,11 +281,13 @@
                             <goal>java</goal>
                         </goals>
                         <configuration>
+                            <skip>${skipGen}</skip>
                             <mainClass>jena.schemagen</mainClass>
                             <commandlineArgs>
                                 -i ${basedir}/src/main/resources/vivo.nt \
                                 -a http://aims.fao.org/aos/geopolitical.owl# \
                                 -e NT \
+                                --ontology \
                                 --package ca.uqam.vocab.vivo \
                                 -o ${basedir}/src/main/java \
                                 -n GEO
@@ -282,12 +301,15 @@
                             <goal>java</goal>
                         </goals>
                         <configuration>
+                            <skip>${skipGen}</skip>
                             <mainClass>jena.schemagen</mainClass>
                             <commandlineArgs>
                                 -i ${basedir}/src/main/resources/vivo.nt \
                                 -a http://www.w3.org/2006/vcard/ns# \
                                 -e NT \
-                                --package ca.uqam.vocab.vivo \
+                                --ontology \
+                                --package
+                                ca.uqam.vocab.vivo \
                                 -o ${basedir}/src/main/java \
                                 -n VCARD
                             </commandlineArgs>
@@ -326,17 +348,30 @@
                             <pluginExecutions>
                                 <pluginExecution>
                                     <pluginExecutionFilter>
+                                        <groupId>org.codehaus.mojo</groupId>
+                                        <artifactId>build-helper-maven-plugin</artifactId>
+                                        <versionRange>[3.2.0,)</versionRange>
+                                        <goals>
+                                            <goal>add-source</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore></ignore>
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
                                         <groupId>
                                             org.codehaus.mojo
                                         </groupId>
                                         <artifactId>
-                                            build-helper-maven-plugin
+                                            exec-maven-plugin
                                         </artifactId>
                                         <versionRange>
-                                            [3.2.0,)
+                                            [3.0.0,)
                                         </versionRange>
                                         <goals>
-                                            <goal>add-source</goal>
+                                            <goal>java</goal>
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>

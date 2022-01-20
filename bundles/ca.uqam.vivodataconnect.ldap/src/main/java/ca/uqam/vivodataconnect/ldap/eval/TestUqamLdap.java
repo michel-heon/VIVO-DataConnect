@@ -2,10 +2,7 @@ package ca.uqam.vivodataconnect.ldap.eval;
 
 import java.io.IOException;
 
-import javax.naming.directory.SearchControls;
-
 import org.apache.directory.api.ldap.model.cursor.CursorException;
-import org.apache.directory.api.ldap.model.cursor.EntryCursor;
 import org.apache.directory.api.ldap.model.cursor.SearchCursor;
 import org.apache.directory.api.ldap.model.entry.Entry;
 import org.apache.directory.api.ldap.model.exception.LdapException;
@@ -18,7 +15,7 @@ import org.apache.directory.api.ldap.model.name.Dn;
 import org.apache.directory.ldap.client.api.LdapConnection;
 import org.apache.directory.ldap.client.api.LdapNetworkConnection;
 
-import ca.uqam.vivodataconnect.ldap.util.LdapHelper;
+import ca.uqam.vivodataconnect.util.DataConnectHelper;
 
 /**
  * @author Michel Héon; Université du Québec à Montréal
@@ -28,10 +25,10 @@ import ca.uqam.vivodataconnect.ldap.util.LdapHelper;
 public class TestUqamLdap {
 	public static void main(String[] args) throws LdapException, CursorException, IOException {
 		System.out.println("Get connection");
-		LdapConnection connection = new LdapNetworkConnection( LdapHelper.getAddress(), LdapHelper.getPort(), true );	
+		LdapConnection connection = new LdapNetworkConnection( DataConnectHelper.getAddress(), DataConnectHelper.getPort(), true );	
 		System.out.println("Get bind");
-		System.out.println(LdapHelper.getUserName());
-		connection.bind("uid="+LdapHelper.getUserName(), LdapHelper.getPasswd());
+		System.out.println(DataConnectHelper.getUserName());
+		connection.bind("uid="+DataConnectHelper.getUserName(), DataConnectHelper.getPasswd());
 		System.out.println("Get cursor");
         // Create the SearchRequest object
         SearchRequest req = new SearchRequestImpl();

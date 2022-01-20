@@ -11,24 +11,23 @@
 ###################################################################
 export SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 source $SCRIPT_DIR/00-env.sh
-mvn org.codehaus.mojo:exec-maven-plugin:java@uqam-organization &
-mvn org.codehaus.mojo:exec-maven-plugin:java@uqam-event &
-mvn org.codehaus.mojo:exec-maven-plugin:java@uqam-people &
-mvn org.codehaus.mojo:exec-maven-plugin:java@uqam-research &
-mvn org.codehaus.mojo:exec-maven-plugin:java@uqam-data &
+mvn org.codehaus.mojo:exec-maven-plugin:java@uqam-organization -DskipGen=false &
+mvn org.codehaus.mojo:exec-maven-plugin:java@uqam-event -DskipGen=false &
+mvn org.codehaus.mojo:exec-maven-plugin:java@uqam-people -DskipGen=false &
+mvn org.codehaus.mojo:exec-maven-plugin:java@uqam-research -DskipGen=false &
 wait
-mvn org.codehaus.mojo:exec-maven-plugin:java@vitro-code &
-mvn org.codehaus.mojo:exec-maven-plugin:java@vivo-code &
-mvn org.codehaus.mojo:exec-maven-plugin:java@obo-code &
+mvn org.codehaus.mojo:exec-maven-plugin:java@vitro-code -DskipGen=false &
+mvn org.codehaus.mojo:exec-maven-plugin:java@vivo-code -DskipGen=false &
+mvn org.codehaus.mojo:exec-maven-plugin:java@obo-code -DskipGen=false &
 wait
-mvn org.codehaus.mojo:exec-maven-plugin:java@skos-code &
-mvn org.codehaus.mojo:exec-maven-plugin:java@skos2-code &
-mvn org.codehaus.mojo:exec-maven-plugin:java@term-code &
-mvn org.codehaus.mojo:exec-maven-plugin:java@bibo-code &
+mvn org.codehaus.mojo:exec-maven-plugin:java@skos-code -DskipGen=false &
+mvn org.codehaus.mojo:exec-maven-plugin:java@skos2-code -DskipGen=false &
+mvn org.codehaus.mojo:exec-maven-plugin:java@term-code -DskipGen=false &
+mvn org.codehaus.mojo:exec-maven-plugin:java@bibo-code -DskipGen=false &
 wait
-mvn org.codehaus.mojo:exec-maven-plugin:java@ns-code &
-mvn org.codehaus.mojo:exec-maven-plugin:java@geopolitical-code &
-mvn org.codehaus.mojo:exec-maven-plugin:java@vcard-code &
+mvn org.codehaus.mojo:exec-maven-plugin:java@ns-code -DskipGen=false  &
+mvn org.codehaus.mojo:exec-maven-plugin:java@geopolitical-code -DskipGen=false  &
+mvn org.codehaus.mojo:exec-maven-plugin:java@vcard-code -DskipGen=false &
 wait
 mvn install -Dexec.skip=true
 echo "DONE!"
