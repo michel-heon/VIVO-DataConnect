@@ -15,14 +15,13 @@ import ca.uqam.vivodataconnect.util.DataConnectHelper;
 public class ETL_images {
 
 	public static void main(String[] args) throws ApiException {
-		System.out.println("Done");
 		ETL_images etl = new ETL_images();
 		AmazonS3 s3 = AmazonS3ClientBuilder.standard().build();
 
 		ApiClient apiClient = new ApiClient();
 		apiClient.setBasePath(DataConnectHelper.getVivoProxyUrl());
 		IndividualApi indv = new IndividualApi(apiClient);
-		S3Objects.inBucket(s3, "photos-uqam").forEach((S3ObjectSummary objectSummary) -> {
+		S3Objects.inBucket(s3, DataConnectHelper.getBucketImages()).forEach((S3ObjectSummary objectSummary) -> {
 			String imgName = objectSummary.getKey();
 			String id = imgName.replace(".jpg", "");
 			String bucket = objectSummary.getBucketName();
@@ -40,5 +39,6 @@ public class ETL_images {
 				e.printStackTrace();
 			}
 		});
+        System.out.println("Done");
 	}
 }

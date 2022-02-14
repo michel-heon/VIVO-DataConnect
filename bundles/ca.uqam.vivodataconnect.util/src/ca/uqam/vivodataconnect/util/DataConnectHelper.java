@@ -14,8 +14,7 @@ import java.util.Properties;
  *
  */
 public class DataConnectHelper{
-
-	private static Properties loginProperties;
+    private static Properties loginProperties;
 	private static DataConnectHelper login_instance;
 	public static DataConnectHelper getInstance()
 	{
@@ -46,40 +45,44 @@ public class DataConnectHelper{
 		System.out.println(DataConnectHelper.getPasswd());
 	}
 	
-	/**
-	 * @return VIVO_PROXY_URL
-	 */
 	public static String getVivoProxyUrl() {
 		DataConnectHelper.getInstance();
 		return loginProperties.getProperty(Constant.VIVO_PROXY_URL);    
 	}
-
-	/**
-	 * @return the passwd
-	 */
 	static public String getPasswd() {
 		DataConnectHelper.getInstance();
 		return loginProperties.getProperty(Constant.OPENDJ_PASSWORD);    
 	}
-	/**
-	 * @return the userName
-	 */
 	static public String getUserName() {
 		DataConnectHelper.getInstance();
 		return loginProperties.getProperty(Constant.OPENDJ_USERNAME);
 	}
-	/**
-	 * @return the adresss
-	 */
 	static public String getAddress() {
 		DataConnectHelper.getInstance();
 		return loginProperties.getProperty(Constant.OPENDJ_ADDRESS);
 	}
-	/**
-	 * @return the port
-	 */
 	static public int getPort() {
 		DataConnectHelper.getInstance();
 		return Integer.valueOf(loginProperties.getProperty(Constant.OPENDJ_PORT));
 	}
+	static public String getBucketImages() {
+        DataConnectHelper.getInstance();
+        return loginProperties.getProperty(Constant.S3_BUCKET_IMAGES);
+    }
+	static public void setBucketImages(String bucketImages) {
+        DataConnectHelper.getInstance();
+        loginProperties.setProperty(Constant.S3_BUCKET_IMAGES, bucketImages);
+    }
+	static public String getBucketRDP() {
+        DataConnectHelper.getInstance();
+        return loginProperties.getProperty(Constant.S3_BUCKET_RDP);
+    }
+	static public void setBucketRDP(String bucketRDP) {
+        DataConnectHelper.getInstance();
+        loginProperties.setProperty(Constant.S3_BUCKET_RDP, bucketRDP);
+    }
+    public static String getRdpExpertises() {
+        DataConnectHelper.getInstance();
+        return loginProperties.getProperty(Constant.RDP_EXPERTISE);
+    }
 }

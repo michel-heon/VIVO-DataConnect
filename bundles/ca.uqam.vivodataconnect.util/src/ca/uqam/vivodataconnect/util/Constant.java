@@ -7,4 +7,7 @@ public class Constant {
 	static final String OPENDJ_ADDRESS = "opendj.address";
 	static final String OPENDJ_USERNAME = "opendj.username";
 	static final String OPENDJ_PASSWORD = "opendj.password";
+    static final String S3_BUCKET_RDP = "s3.bucket.rdp";
+	static final String S3_BUCKET_IMAGES = "s3.bucket.images";
+    static final String RDP_EXPERTISE = "rdp.expertise";
 }
